@@ -1,0 +1,15 @@
+# Ignoring the Virtual Environment
+HSPMPholistic/*
+*/HSPMPholistic
+
+# Ignoring the Tensorboard Logs
+Logs/*
+*/Logs
+
+# Ignoring .ipynb checkpoints
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints
+
+# Ignoring The Data Set
+MP_Data/*
+*/MP_Data

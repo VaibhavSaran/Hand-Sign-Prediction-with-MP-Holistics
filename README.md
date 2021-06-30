@@ -89,27 +89,38 @@ For this project I have not used any data from any 3rd party source/company. I w
 <img src="https://i.imgur.com/kyOf4XV.png">
 (one hand is missing as it was used to quit the screen.)
 <br/>
+<br/>
 <b>Step 3.</b> The keypoints which were generated will be needed to be tracked  and extracted. In total for this project 1662 keypoints are being used so to track and extract them we define a function for the same.
+<br/>
 <br/>
 <b>Step 4.</b> Folders and paths for the collection of the keypoints are setup using the OS library for each of action which is "Hello" , "Thank You" and "I Love You".
 <br/>
+<br/>
 <b>Step 5.</b> In this step we collect keypoints for each of the handsign in video format. A total of 30 Videos of size 30 frames for 3 handsigns and in each frame there are 1662 keypoints which are being tracked and stored.
 <br/>
+<br/>
 <b>Step 6.</b> In this step the collected data is preprocessed, Labels are created for each action and features are created. As a result the input has 90 videos with 30 frames in each of those videos with 1662 values which represent our keypoints. The output y is one hot encoded and we get 90 labels in the shape of (90,3).
+
 
 A sub part if this step is partition of data into train and test. The reason for taking only 5% of the data for test is because of lack of available data for each action, so if we use a standard test train split of 70-30 or 60-40 etc. Due to lack of available data the LSTM model will not be able to train properly and will not perform well in real time predictions. NOTE: In case we have more data while executing this notebook we can increase the test size to a standard partition if there is adequate data available.
 <br/>
 <b>Step 7.</b> In this step the LSTM Model is built with the architecture shown in picture.
 <img src = "https://i.imgur.com/OSQF0Mn.png">
-A summary of the LSTM Model:
+<br/>
+A summary of the LSTM Model:<br/>
 <img src ="https://i.imgur.com/Sy3cAok.png">
+<br/>
 The final number of trainable parameters indicate half a million parameters which is very less comapred to 30 million parameters used in other state of the art models.
+<br/>
 <br/>
 <b>Step 8.</b> In this step we try to make static predictions on our model to confirm whether it is performing and predicting as we desired it.
 <br/>
+<br/>
 <b>Step 9.</b> After confirming that our model is performing well, we save the model in this step.
 <br/>
+<br/>
 <b>Step 10.</b> In this step model is evaluated to check how accurate it is, in the current situation it has very less data so the evaluation may not yield very optimal results but it still goes on to do great predictions and with addition of more data it will be even more effective.
+<br/>
 <br/>
 <b>Step 11.</b> In this step we perform predictions in real time from the feed which we get from the camera.
 

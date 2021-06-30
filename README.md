@@ -84,6 +84,7 @@ For this project I have not used any data from any 3rd party source/company. I w
 ## In Depth Project Steps and Working
 <b>Step 1.</b> The first step is of importing all the required dependencies and verifying the status of CUDA libraries and whether tensorflow is using GPU or not.
 <br/>
+<br/>
 <b>Step 2.</b> In the second point Mediapipe holistic is setuped to generate keypoints and draw the landmarks on face, pose, left hand and right hand.
 <img src="https://i.imgur.com/kyOf4XV.png">
 (one hand is missing as it was used to quit the screen.)

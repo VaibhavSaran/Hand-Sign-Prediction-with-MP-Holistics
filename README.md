@@ -15,7 +15,7 @@ I hereby like to thank Mr. Nicholas Renotte for his amazing work on hand sign pr
 ## Inspiration and Overview
 
 Mute people often come across scenarios where they face a huge gap while communication with normal people. There are some stae of the art models availabe which have taken an
-approach on this problem by using <a href="https://www.mdpi.com/1424-8220/19/24/5429/htm">3DCNN and LSTM with FSM Context-Aware Model</a>and many more.<br>
+approach on this problem by using <a href="https://www.mdpi.com/1424-8220/19/24/5429/htm">3DCNN and LSTM with FSM Context-Aware Model</a> and many more.<br>
 The general concept is that a number of CNN layers are used followed by a number of LSTM layers, use of a pretrained mobile net followed by a number of LSTM layers. These models end up requiring large amounts of data to produce good results and also demand very high compute power due to presence of 30 to 40 million parameters.
 
 ## Advantages of using Mediapipe Holistic with LSTM(Long Short Term Memory)
